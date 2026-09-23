@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ABC Kids Learning | Ayana Studios</title>
+  <meta name="description" content="Privacy Policy for ABC Kids Learning mobile application by Ayana Studios. Learn how we handle privacy, data safety, and children's protection.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Privacy Policy - ABC Kids Learning">
+  <meta property="og:description" content="Privacy Policy for ABC Kids Learning educational app by Ayana Studios.">
+  <meta property="og:image" content="logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563EB;
+      --primary-hover: #1D4ED8;
+      --primary-light: #EFF6FF;
+      --primary-border: #BFDBFE;
+      
+      --accent: #0D9488;
+      --accent-light: #F0FDFA;
+      
+      --success: #059669;
+      --success-light: #ECFDF5;
+      --success-border: #A7F3D0;
+      
+      --warning: #D97706;
+      --warning-light: #FFFBEB;
+      
+      --bg-page: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --bg-sidebar: #FFFFFF;
+      --bg-subtle: #F1F5F9;
+      
+      --border-color: #E2E8F0;
+      --border-subtle: #F1F5F9;
+      
+      --text-main: #0F172A;
+      --text-body: #334155;
+      --text-muted: #64748B;
+      --text-light: #94A3B8;
+      
+      --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+      --shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.05), 0 2px 4px -1px rgba(15, 23, 42, 0.03);
+      --shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.06), 0 4px 6px -2px rgba(15, 23, 42, 0.02);
+      
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 20px;
+    }
+
+    [data-theme="dark"] {
+      --bg-page: #0F172A;
+      --bg-card: #1E293B;
+      --bg-sidebar: #1E293B;
+      --bg-subtle: #334155;
+      
+      --border-color: #334155;
+      --border-subtle: #1E293B;
+      
+      --text-main: #F8FAFC;
+      --text-body: #CBD5E1;
+      --text-muted: #94A3B8;
+      --text-light: #64748B;
+      
+      --primary-light: rgba(37, 99, 235, 0.15);
+      --primary-border: rgba(37, 99, 235, 0.3);
+      --success-light: rgba(5, 150, 105, 0.15);
+      --success-border: rgba(5, 150, 105, 0.3);
+      
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-body);
+      line-height: 1.7;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Navigation Bar */
+    .top-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      transition: background-color 0.25s ease;
+    }
+
+    [data-theme="dark"] .top-navbar {
+      background: rgba(30, 41, 59, 0.92);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+      transition: transform 0.2s ease;
+    }
+
+    .brand:hover .brand-logo {
+      transform: scale(1.05);
+    }
+
+    .brand-text h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--text-main);
+      letter-spacing: -0.3px;
+    }
+
+    .brand-text p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-icon {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-icon:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary-border);
+    }
+
+    /* Main Container Layout */
+    .app-layout {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2.25rem;
+      align-items: start;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      position: sticky;
+      top: 5.25rem;
+      background: var(--bg-sidebar);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      max-height: calc(100vh - 6.5rem);
+      overflow-y: auto;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sidebar-header {
+      margin-bottom: 1rem;
+    }
+
+    .sidebar-title {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .search-input-wrapper {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.55rem 0.75rem 0.55rem 2.2rem;
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-main);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 14px;
+      fill: none;
+      stroke: var(--text-muted);
+      stroke-width: 2;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .toc-link {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.86rem;
+      color: var(--text-body);
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      border-left: 3px solid transparent;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .toc-link:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .toc-link.active {
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: 600;
+      border-left-color: var(--primary);
+    }
+
+    /* Main Content Area */
+    .content-area {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: 2.75rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Hero Header */
+    .hero-header {
+      padding-bottom: 2rem;
+      margin-bottom: 2.25rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hero-badge-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.8rem;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: var(--bg-subtle);
+      color: var(--text-body);
+      border: 1px solid var(--border-color);
+    }
+
+    .badge-success {
+      background: var(--success-light);
+      color: var(--success);
+      border-color: var(--success-border);
+    }
+
+    .badge-primary {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary-border);
+    }
+
+    .hero-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+      letter-spacing: -0.6px;
+      line-height: 1.2;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 1.25rem;
+      background: var(--bg-page);
+      padding: 1.25rem 1.5rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      margin-top: 1.75rem;
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .meta-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .meta-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .meta-value a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .meta-value a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sober Key Highlights Box */
+    .highlights-box {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .highlights-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      letter-spacing: -0.2px;
+    }
+
+    .highlights-title svg {
+      color: var(--primary);
+    }
+
+    .highlights-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1rem;
+      list-style: none;
+    }
+
+    .highlights-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.88rem;
+      color: var(--text-body);
+      line-height: 1.5;
+    }
+
+    .highlights-item svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: var(--success);
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    /* Policy Content Typography */
+    .intro-paragraph {
+      font-size: 1.02rem;
+      color: var(--text-body);
+      margin-bottom: 1.25rem;
+    }
+
+    .policy-section {
+      padding-top: 2rem;
+      margin-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+      scroll-margin-top: 6.5rem;
+    }
+
+    .policy-section:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      letter-spacing: -0.3px;
+    }
+
+    .section-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      height: 28px;
+      padding: 0 0.4rem;
+      background: var(--primary-light);
+      color: var(--primary);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 700;
+      border: 1px solid var(--primary-border);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--text-body);
+      font-size: 0.95rem;
+    }
+
+    p strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    ul {
+      margin-bottom: 1.25rem;
+      padding-left: 1.35rem;
+    }
+
+    li {
+      margin-bottom: 0.45rem;
+      color: var(--text-body);
+      font-size: 0.95rem;
+    }
+
+    li strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Card */
+    .contact-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--primary);
+      color: white;
+      padding: 0.65rem 1.25rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      width: fit-content;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .contact-btn:hover {
+      background: var(--primary-hover);
+      text-decoration: none;
+    }
+
+    .contact-btn:active {
+      transform: scale(0.98);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2.5rem 1.5rem 0.5rem;
+      margin-top: 3rem;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+
+    /* Floating Back to Top */
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 42px;
+      height: 42px;
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-lg);
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+      z-index: 90;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary-border);
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--text-main);
+      color: var(--bg-card);
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-lg);
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 1000;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 900px) {
+      .app-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        display: none;
+      }
+
+      .content-area {
+        padding: 1.75rem;
+      }
+
+      .hero-title {
+        font-size: 1.75rem;
+      }
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      .top-navbar, .sidebar, .back-to-top, .nav-actions, .search-input-wrapper {
+        display: none !important;
+      }
+
+      .app-layout {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+
+      .content-area {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      }
+
+      body {
+        background: white;
+        color: black;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Top Navbar -->
+  <header class="top-navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <img src="logo.png" alt="ABC Kids Learning Logo" class="brand-logo">
+        <div class="brand-text">
+          <h1>ABC Kids Learning</h1>
+          <p>Ayana Studios Privacy Center</p>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <button class="btn-icon" id="themeToggle" title="Toggle Theme" aria-label="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="app-layout">
+    
+    <!-- Sidebar Navigation / Table of Contents -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">Table of Contents</div>
+        <div class="search-input-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="Filter topics...">
+        </div>
+      </div>
+      <ul class="toc-list" id="tocList">
+        <li><a href="#section-1" class="toc-link">1. Children's Privacy</a></li>
+        <li><a href="#section-2" class="toc-link">2. Data We Do Not Collect</a></li>
+        <li><a href="#section-3" class="toc-link">3. Automatic Technical Data</a></li>
+        <li><a href="#section-4" class="toc-link">4. Firebase Analytics</a></li>
+        <li><a href="#section-5" class="toc-link">5. Firebase Crashlytics</a></li>
+        <li><a href="#section-6" class="toc-link">6. Advertising & Google AdMob</a></li>
+        <li><a href="#section-7" class="toc-link">7. Child-Directed Ads</a></li>
+        <li><a href="#section-8" class="toc-link">8. Local Storage on Device</a></li>
+        <li><a href="#section-9" class="toc-link">9. Internet & Network Use</a></li>
+        <li><a href="#section-10" class="toc-link">10. Device Permissions</a></li>
+        <li><a href="#section-11" class="toc-link">11. Audio & Sound</a></li>
+        <li><a href="#section-12" class="toc-link">12. Camera & Photos</a></li>
+        <li><a href="#section-13" class="toc-link">13. Location Information</a></li>
+        <li><a href="#section-14" class="toc-link">14. Social Features & Chat</a></li>
+        <li><a href="#section-15" class="toc-link">15. Parent Zone Gate</a></li>
+        <li><a href="#section-16" class="toc-link">16. Data Sharing & 3rd Parties</a></li>
+        <li><a href="#section-17" class="toc-link">17. Data Retention</a></li>
+        <li><a href="#section-18" class="toc-link">18. Data Deletion Requests</a></li>
+        <li><a href="#section-19" class="toc-link">19. Data Security</a></li>
+        <li><a href="#section-20" class="toc-link">20. 3rd-Party Policies</a></li>
+        <li><a href="#section-21" class="toc-link">21. Policy Changes</a></li>
+        <li><a href="#section-22" class="toc-link">22. Contact Us</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content-area">
+      
+      <!-- Hero Header -->
+      <div class="hero-header">
+        <div class="hero-badge-group">
+          <span class="badge badge-success">✓ Google Play Families Compliant</span>
+          <span class="badge badge-primary">🛡️ Children's Privacy Protected</span>
+          <span class="badge">Offline-First Educational App</span>
+        </div>
+        <h1 class="hero-title">Privacy Policy</h1>
+        <p class="intro-paragraph">
+          Ayana Studios ("we", "us", or "our") operates the <strong>ABC Kids Learning</strong> mobile application (the "App").
+        </p>
+        <p class="intro-paragraph">
+          ABC Kids Learning is an educational application designed primarily for children. This Privacy Policy explains what information the App handles, how it is used, how third-party services may process information, and the choices available to parents and users.
+        </p>
+        <p class="intro-paragraph">
+          By using ABC Kids Learning, you acknowledge the practices described in this Privacy Policy.
+        </p>
+
+        <!-- Meta Grid -->
+        <div class="meta-grid">
+          <div class="meta-item">
+            <span class="meta-label">Effective Date</span>
+            <span class="meta-value">23 September 2026</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Developer</span>
+            <span class="meta-value">Ayana Studios</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Application</span>
+            <span class="meta-value">ABC Kids Learning</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Country</span>
+            <span class="meta-value">India</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Privacy Contact</span>
+            <span class="meta-value">
+              <a href="mailto:ayanastudios22@gmail.com" onclick="copyEmail(event)">ayanastudios22@gmail.com</a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sober Key Highlights Box -->
+      <div class="highlights-box">
+        <div class="highlights-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          Summary for Parents & Reviewers
+        </div>
+        <ul class="highlights-list">
+          <li class="highlights-item">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>No Registration:</strong> No account, name, or email required from children.</span>
+          </li>
+          <li class="highlights-item">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>No Social Chat:</strong> Zero child-to-child communication or public profiles.</span>
+          </li>
+          <li class="highlights-item">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>No Microphones:</strong> Audio output only; no voice recording or camera access.</span>
+          </li>
+          <li class="highlights-item">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Parent Zone:</strong> Adult-gated access to settings & parent features.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Sections -->
+
+      <!-- Section 1 -->
+      <section id="section-1" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">1</span>
+          Children's Privacy
+        </h2>
+        <p>
+          ABC Kids Learning is designed primarily for young children and is intended to provide educational activities in a child-friendly environment.
+        </p>
+        <p>
+          We do <strong>not</strong> require children to create an account, provide their name, email address, phone number, date of birth, photographs, voice recordings, or other directly identifying information to use the App.
+        </p>
+        <p>
+          The App does not provide child-to-child communication, chat, social networking, public profiles, user-generated content uploads, or sharing features.
+        </p>
+        <p>
+          Because the App is directed toward children, we take children's privacy seriously and design the App to minimize the collection of personal information.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section-2" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">2</span>
+          Information We Do Not Directly Collect
+        </h2>
+        <p>
+          ABC Kids Learning does not provide forms or account-registration features that ask users to submit:
+        </p>
+        <ul>
+          <li>Name</li>
+          <li>Email address</li>
+          <li>Telephone number</li>
+          <li>Date of birth or age</li>
+          <li>Home or precise location</li>
+          <li>Contacts</li>
+          <li>Photos or videos</li>
+          <li>Camera data</li>
+          <li>Microphone or voice recordings</li>
+          <li>Payment or financial information</li>
+          <li>Passwords or authentication information</li>
+        </ul>
+        <p>
+          The App does not use user accounts, authentication, cloud profiles, or user-uploaded content.
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section-3" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">3</span>
+          Information That May Be Processed Automatically
+        </h2>
+        <p>
+          Although we do not ask children to provide personal information, certain technical and usage information may be processed automatically by third-party services used by the App.
+        </p>
+        <p>Depending on the service and device, this may include:</p>
+        <ul>
+          <li>IP address</li>
+          <li>App installation or app-instance identifiers</li>
+          <li>Device model</li>
+          <li>Operating system and version</li>
+          <li>App version</li>
+          <li>Crash and diagnostic information</li>
+          <li>Information about interactions with the App</li>
+          <li>Advertising and ad-request information</li>
+        </ul>
+        <p>
+          This information is used primarily to operate, maintain, analyze, secure, and improve the App and to provide advertising where applicable.
+        </p>
+        <p>
+          The App does not intentionally collect a child's name or other directly identifying information for its own user profiles.
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section-4" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">4</span>
+          Firebase Analytics
+        </h2>
+        <p>
+          ABC Kids Learning uses <strong>Google Firebase Analytics</strong> to understand how users interact with the App and to help us improve educational content and app functionality.
+        </p>
+        <p>Analytics information may include events such as:</p>
+        <ul>
+          <li>Categories viewed</li>
+          <li>Games started</li>
+          <li>Games completed</li>
+          <li>Games replayed</li>
+          <li>Games exited</li>
+          <li>Hints used</li>
+          <li>Correct and incorrect answers</li>
+          <li>Game scores</li>
+          <li>Game duration</li>
+        </ul>
+        <p>
+          The App does not intentionally attach a child's name, email address, or other directly identifying information to these analytics events.
+        </p>
+        <p>
+          Firebase may automatically process technical information such as app-instance identifiers and device-related information as part of providing its analytics service.
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section-5" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">5</span>
+          Firebase Crashlytics
+        </h2>
+        <p>
+          We use <strong>Firebase Crashlytics</strong> to identify and diagnose technical problems and crashes.
+        </p>
+        <p>Crashlytics may process information such as:</p>
+        <ul>
+          <li>Crash stack traces</li>
+          <li>Exception information</li>
+          <li>Device model</li>
+          <li>Operating system version</li>
+          <li>App version</li>
+          <li>Technical diagnostic information</li>
+        </ul>
+        <p>
+          We do not intentionally use Crashlytics to collect a child's name, email address, phone number, photographs, voice recordings, or precise location.
+        </p>
+        <p>
+          Crashlytics helps us identify technical problems and improve the stability and reliability of ABC Kids Learning.
+        </p>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section-6" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">6</span>
+          Advertising and Google AdMob
+        </h2>
+        <p>
+          ABC Kids Learning uses <strong>Google AdMob</strong> to display advertisements.
+        </p>
+        <p>The App may display:</p>
+        <ul>
+          <li>Banner advertisements</li>
+          <li>Rewarded advertisements</li>
+        </ul>
+        <p>
+          A rewarded advertisement may be presented when a user chooses to watch an advertisement to unlock certain optional content, such as a coloring activity.
+        </p>
+        <p>
+          The App does not require a user to provide personal information in order to view or use the educational content.
+        </p>
+        <p>
+          Advertising services may automatically process technical information, including IP address and information associated with an advertising or ad request, in accordance with the advertising provider's policies.
+        </p>
+        <p>
+          Because ABC Kids Learning is designed for children, advertising is configured and used in accordance with applicable Google Play Families requirements and applicable advertising policies.
+        </p>
+        <p>
+          For more information about Google's privacy practices, users may review Google's applicable privacy documentation.
+        </p>
+      </section>
+
+      <!-- Section 7 -->
+      <section id="section-7" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">7</span>
+          Child-Directed Advertising
+        </h2>
+        <p>
+          ABC Kids Learning is designed for children. We take steps to configure advertising in accordance with applicable requirements for child-directed applications.
+        </p>
+        <p>
+          We do not intentionally use the App to create personalized advertising profiles based on a child's name, email address, precise location, or similar directly identifying information.
+        </p>
+        <p>
+          Advertising functionality may still involve technical information necessary for an advertisement to be requested and delivered.
+        </p>
+        <p>
+          Parents should also review the applicable policies and privacy information provided by Google and its advertising services.
+        </p>
+      </section>
+
+      <!-- Section 8 -->
+      <section id="section-8" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">8</span>
+          Local Data Stored on the Device
+        </h2>
+        <p>
+          Some information is stored locally on the user's device so that the App can remember settings and learning progress.
+        </p>
+        <p>Examples include:</p>
+        <ul>
+          <li>Sound settings</li>
+          <li>Game high scores</li>
+          <li>Learning progress</li>
+          <li>Current levels</li>
+          <li>Selected items</li>
+          <li>Smart Coloring progress</li>
+          <li>Smart Coloring unlock status</li>
+        </ul>
+        <p>
+          This information is stored locally and is not used to create an online child profile.
+        </p>
+        <p>
+          The App does not use a cloud database to synchronize a child's learning profile between devices.
+        </p>
+      </section>
+
+      <!-- Section 9 -->
+      <section id="section-9" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">9</span>
+          Internet and Network Connections
+        </h2>
+        <p>
+          ABC Kids Learning is designed to work primarily as an offline educational application.
+        </p>
+        <p>An internet connection may be used for services such as:</p>
+        <ul>
+          <li>Delivering advertisements through Google AdMob</li>
+          <li>Sending analytics information through Firebase Analytics</li>
+          <li>Sending crash and diagnostic information through Firebase Crashlytics</li>
+        </ul>
+        <p>
+          The App does not operate its own user account server or custom backend for storing children's personal information.
+        </p>
+      </section>
+
+      <!-- Section 10 -->
+      <section id="section-10" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">10</span>
+          Permissions
+        </h2>
+        <p>
+          The current version of ABC Kids Learning requires network-related access for services such as advertising and analytics.
+        </p>
+        <p>The App does not request access to:</p>
+        <ul>
+          <li>Camera</li>
+          <li>Microphone</li>
+          <li>Contacts</li>
+          <li>Calendar</li>
+          <li>Precise location</li>
+          <li>User photographs or gallery</li>
+          <li>Phone number</li>
+          <li>SMS or call logs</li>
+        </ul>
+        <p>
+          The Android Advertising ID permission is also not included in the current application configuration.
+        </p>
+      </section>
+
+      <!-- Section 11 -->
+      <section id="section-11" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">11</span>
+          Audio
+        </h2>
+        <p>
+          ABC Kids Learning contains educational sounds, phonics audio, music, and other audio playback.
+        </p>
+        <p>
+          The App uses audio playback only.
+        </p>
+        <p>
+          The App does <strong>not</strong> record or transmit children's voices and does not require microphone access.
+        </p>
+      </section>
+
+      <!-- Section 12 -->
+      <section id="section-12" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">12</span>
+          Camera, Photos, and User Uploads
+        </h2>
+        <p>
+          ABC Kids Learning does not use the camera, photo gallery, or user-upload functionality.
+        </p>
+        <p>
+          Images and educational artwork used by the App are bundled with the application or otherwise provided as part of the App's content.
+        </p>
+        <p>
+          The App does not upload photographs, drawings, videos, or other user-generated media.
+        </p>
+      </section>
+
+      <!-- Section 13 -->
+      <section id="section-13" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">13</span>
+          Location Information
+        </h2>
+        <p>
+          ABC Kids Learning does not request or collect precise location information.
+        </p>
+        <p>
+          The App does not use GPS or location services to provide its educational features.
+        </p>
+      </section>
+
+      <!-- Section 14 -->
+      <section id="section-14" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">14</span>
+          Social Features and Communication
+        </h2>
+        <p>
+          ABC Kids Learning does not provide:
+        </p>
+        <ul>
+          <li>Chat</li>
+          <li>Messaging</li>
+          <li>Child-to-child communication</li>
+          <li>Public profiles</li>
+          <li>Social feeds</li>
+          <li>User-generated public posts</li>
+          <li>Content sharing between users</li>
+          <li>Community features</li>
+        </ul>
+        <p>
+          The App also does not allow children to communicate directly with strangers through the App.
+        </p>
+      </section>
+
+      <!-- Section 15 -->
+      <section id="section-15" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">15</span>
+          Parent Zone
+        </h2>
+        <p>
+          ABC Kids Learning includes a Parent Zone designed to help restrict access to certain parent-oriented functionality.
+        </p>
+        <p>
+          Access to the Parent Zone uses an adult-action mechanism, including a mathematical question and/or long-press interaction.
+        </p>
+        <p>
+          The Parent Zone may contain parent-oriented functionality such as subscription or purchase-related screens.
+        </p>
+        <p>
+          The current App does not require children to create accounts or provide personal information to access its core educational activities.
+        </p>
+      </section>
+
+      <!-- Section 16 -->
+      <section id="section-16" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">16</span>
+          Data Sharing and Third-Party Services
+        </h2>
+        <p>
+          We do not sell children's personal information.
+        </p>
+        <p>
+          The App may transmit information to third-party service providers when necessary for the services described in this Privacy Policy, including:
+        </p>
+        <ul>
+          <li><strong>Google AdMob</strong> — advertising services</li>
+          <li><strong>Google Firebase Analytics</strong> — app usage analytics</li>
+          <li><strong>Firebase Crashlytics</strong> — crash and diagnostic reporting</li>
+        </ul>
+        <p>
+          These services may process technical or usage information in accordance with their respective terms and privacy policies.
+        </p>
+        <p>
+          We do not operate a separate database containing children's names, email addresses, phone numbers, photographs, or profiles.
+        </p>
+      </section>
+
+      <!-- Section 17 -->
+      <section id="section-17" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">17</span>
+          Data Retention
+        </h2>
+        <p>
+          Information stored locally by the App, such as learning progress and settings, generally remains on the device until:
+        </p>
+        <ul>
+          <li>The user deletes the information through available App functionality, if provided;</li>
+          <li>The App's stored data is cleared through the device settings;</li>
+          <li>The App is uninstalled; or</li>
+          <li>The relevant information is overwritten or reset by the App.</li>
+        </ul>
+        <p>
+          Information processed by third-party services such as Google Firebase and Google AdMob is subject to the respective provider's retention and deletion practices.
+        </p>
+        <p>
+          Because ABC Kids Learning does not create user accounts, we do not maintain a cloud-based child account that can be accessed across devices.
+        </p>
+      </section>
+
+      <!-- Section 18 -->
+      <section id="section-18" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">18</span>
+          Data Deletion and Parental Requests
+        </h2>
+        <p>
+          Since ABC Kids Learning does not require user accounts and does not maintain a cloud-based personal profile for children, there is generally no child account for us to delete.
+        </p>
+        <p>
+          Parents may delete locally stored App data by clearing the App's data through the device's operating-system settings or by uninstalling the App.
+        </p>
+        <p>
+          If you have a privacy-related question or believe that information associated with your use of the App requires review or deletion, you may contact us at:
+        </p>
+        <div class="contact-card">
+          <strong style="color: var(--text-main); font-size: 0.95rem;">Email Privacy Contact:</strong>
+          <a href="mailto:ayanastudios22@gmail.com" class="contact-btn" onclick="copyEmail(event)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            ayanastudios22@gmail.com
+          </a>
+        </div>
+        <p style="margin-top: 1rem;">
+          We will review requests and respond as appropriate.
+        </p>
+      </section>
+
+      <!-- Section 19 -->
+      <section id="section-19" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">19</span>
+          Data Security
+        </h2>
+        <p>
+          We take reasonable measures to limit the collection and use of information and to protect information processed through the App.
+        </p>
+        <p>
+          Because the App relies on third-party services such as Google AdMob, Firebase Analytics, and Firebase Crashlytics, information transmitted to those services is also subject to their security practices and policies.
+        </p>
+        <p>
+          No method of electronic transmission or storage can be guaranteed to be completely secure.
+        </p>
+      </section>
+
+      <!-- Section 20 -->
+      <section id="section-20" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">20</span>
+          Third-Party Privacy Policies
+        </h2>
+        <p>
+          ABC Kids Learning uses third-party services whose privacy practices are governed by their own policies.
+        </p>
+        <p>Users and parents may review the privacy information provided by:</p>
+        <ul>
+          <li>Google</li>
+          <li>Google AdMob</li>
+          <li>Google Firebase</li>
+          <li>Firebase Analytics</li>
+          <li>Firebase Crashlytics</li>
+        </ul>
+        <p>
+          We recommend that parents review the applicable third-party privacy policies to understand how those services process technical, advertising, analytics, and diagnostic information.
+        </p>
+      </section>
+
+      <!-- Section 21 -->
+      <section id="section-21" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">21</span>
+          Changes to This Privacy Policy
+        </h2>
+        <p>
+          We may update this Privacy Policy when the App's functionality, data practices, third-party services, or applicable requirements change.
+        </p>
+        <p>
+          When we make changes, we will update the <strong>Effective Date</strong> at the beginning of this Privacy Policy.
+        </p>
+        <p>
+          We encourage parents and users to periodically review this page for the latest version.
+        </p>
+      </section>
+
+      <!-- Section 22 -->
+      <section id="section-22" class="policy-section">
+        <h2 class="section-title">
+          <span class="section-num">22</span>
+          Contact Us
+        </h2>
+        <p>
+          If you have questions, concerns, requests, or feedback regarding this Privacy Policy or the privacy practices of ABC Kids Learning, please contact:
+        </p>
+        <div class="contact-card">
+          <p style="margin:0; font-size: 1.05rem; color: var(--text-main);"><strong>Ayana Studios</strong></p>
+          <p style="margin:0; color: var(--text-body);"><strong>Country:</strong> India</p>
+          <p style="margin:0; color: var(--text-body);">
+            <strong>Email:</strong>
+            <a href="mailto:ayanastudios22@gmail.com" onclick="copyEmail(event)">ayanastudios22@gmail.com</a>
+          </p>
+        </div>
+        <p style="margin-top: 1.25rem;">
+          We will make reasonable efforts to review and respond to privacy-related inquiries.
+        </p>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© 2026 Ayana Studios. All rights reserved.</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" title="Back to top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Email copied to clipboard!</div>
+
+  <script>
+    // Theme Management - Default to Light Mode
+    const themeToggleBtn = document.getElementById('themeToggle');
+    let currentTheme = localStorage.getItem('theme') || 'light';
+
+    if (currentTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', currentTheme);
+      localStorage.setItem('theme', currentTheme);
+    });
+
+    // Scrollspy for Sidebar TOC highlighting
+    const sections = document.querySelectorAll('.policy-section');
+    const tocLinks = document.querySelectorAll('.toc-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+
+      // Back to top button visibility
+      const backToTopBtn = document.getElementById('backToTop');
+      if (window.pageYOffset > 400) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    document.getElementById('backToTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Filter/Search in Sidebar TOC
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase();
+      tocLinks.forEach(link => {
+        const text = link.textContent.toLowerCase();
+        const parentLi = link.parentElement;
+        if (text.includes(term)) {
+          parentLi.style.display = 'block';
+        } else {
+          parentLi.style.display = 'none';
+        }
+      });
+    });
+
+    // Copy Email Toast
+    function copyEmail(e) {
+      const email = 'ayanastudios22@gmail.com';
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(email);
+        showToast('Email copied to clipboard!');
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
